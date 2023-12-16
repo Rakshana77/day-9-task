@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .countdown,
+      .message {
+        display: none;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="countdown"></div>
+    <div class="message"></div>
+
+    <script>
+      // Countdown with callback hell
+      setTimeout(function () {
+        document.querySelector(".countdown").innerText = "10";
+        document.querySelector(".countdown").style.display = "block";
+
+        setTimeout(function () {
+          document.querySelector(".countdown").innerText = "9";
+
+          setTimeout(function () {
+            document.querySelector(".countdown").innerText = "8";
+
+            setTimeout(function () {
+              document.querySelector(".countdown").innerText = "7";
+
+              setTimeout(function () {
+                document.querySelector(".countdown").innerText = "6";
+
+                setTimeout(function () {
+                  document.querySelector(".countdown").innerText = "5";
+
+                  setTimeout(function () {
+                    document.querySelector(".countdown").innerText = "4";
+
+                    setTimeout(function () {
+                      document.querySelector(".countdown").innerText = "3";
+
+                      setTimeout(function () {
+                        document.querySelector(".countdown").innerText = "2";
+
+                        setTimeout(function () {
+                          document.querySelector(".countdown").innerText = "1";
+
+                          setTimeout(function () {
+                            // Display the message after the countdown
+                            document.querySelector(".countdown").style.display =
+                              "none";
+                            document.querySelector(".message").innerText =
+                              "Happy Independence Day";
+                            document.querySelector(".message").style.display =
+                              "block";
+                          }, 1000);
+                        }, 1000);
+                      }, 1000);
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    </script>
+  </body>
+</html>
